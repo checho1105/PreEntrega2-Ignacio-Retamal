@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: grid;
+    background-color: antiquewhite;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display: grid;
+    grid-template-areas: 
+    "logo ingresar"
+    "nav nav";
+    text-align: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul{
+    padding: 0;
+    margin-bottom: 0;
+}
+.navbar a{
+    grid-area: ingresar;
+    width: 70px;
+    text-align: end;
+}
+
+.navbar img{
+    grid-area: logo;
+    width: 70px;
+}
+
+.navbar nav{
+    grid-area: nav;
+}
+
+.card-r-h{
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+main h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.img-index{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15%;
+
+}
+
+.container-cm{
+    text-align: center;
+}
+.p-index{
+    display: none;
+}
+
+.button-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20%;
+}
+
+.sec-ubi iframe{
+    height: 300px;
+    width: 320px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media(min-width: 768px){
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .card-ropa{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .container-cm{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        text-align: center;
+    }
+
+    .sec-ubi iframe{
+        height: 665px;
+    }
+
+    .p-index{
+        display: flex;
+    }
+    .button-main{
+        margin: 10%;
+    }
+}
+
+@media(min-width: 1024px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .card-ropa{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .container-cm{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        text-align: center;
+    }
+    .nuestra-historia{
+        width: 50%;
+    }
+
+    .sec-ubi iframe{
+        width: 450px;
+        margin-right: 10px;
+    }
+}
