@@ -8,7 +8,7 @@
 
 header{
     display: grid;
-    background-color: antiquewhite;
+    background-color: rgba(0, 128, 0, 0.651);
     align-items: center;
     font-family: 'Roboto', sans-serif;
 }
@@ -90,7 +90,7 @@ footer{
     display: flex;
     justify-content: center;
     gap: 30px;
-    background-color: blanchedalmond;
+    background-color: rgba(0, 128, 0, 0.514);
     font-family: 'Roboto', sans-serif;
 }
 
